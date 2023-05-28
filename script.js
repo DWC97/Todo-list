@@ -37,3 +37,9 @@ function showTask() {
 }
 
 showTask()
+
+inputBox.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) { // 13 is the keycode for "Enter"
+      event.preventDefault();
+      addTask();
+    }});
